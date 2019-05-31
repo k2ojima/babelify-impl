@@ -1,0 +1,26 @@
+# npm files
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# cache files
+.sass-cache/
+.cache/
+
+# env files
+.env*
+!.env.sample
+
+# built files
+dist/
+
+# IDE settings
+.vscode/
+.idea
+
+# os system files
+*~
+*.swp
+.DS_Store
+Thumbs.db

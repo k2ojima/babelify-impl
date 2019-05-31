@@ -1,0 +1,7 @@
+{
+    "esversion": 8,
+    "globals": {
+        "$": false,
+        "jQuery": false
+    }
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@import "variables";
+
+.content {
+    background-color: $color-foreground;
+}
+
+.header {
+    background: $color-background;
+}
+
+.flow {
+    display: flex;
+    justify-content: space-between;
+
+    &_box {
+        border: 1px solid $color-main;
+        color: $color-main;
+    }
+}
+
+.footer {
+    background: $color-background;
+    background-image: url('img/photo.jpg');
+}

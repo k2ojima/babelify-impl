@@ -29,9 +29,6 @@ $ npm install
 # 圧縮する場合：production, しない場合：development
 NODE_ENV=production
 
-# Compass を利用するか
-USE_COMPASS=false
-
 # Sassファイルのディレクトリ
 STYLE_PATH=resources/sass/
 
@@ -42,9 +39,6 @@ JS_PATH=resources/js/
 STYLE_DIST_PATH=public/css/
 JS_DIST_PATH=public/js/
 ```
-
-- デバッグのしやすさなどにより圧縮しない場合は`NODE_ENV=development`に設定
-- .env内の「ファイルのディレクトリ」を各自の環境に合わせてください。
 
 ---
 

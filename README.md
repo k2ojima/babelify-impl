@@ -1,17 +1,18 @@
 # browserify-es6-sass-env
-Sass, JSのコンパイル環境です。
+This is the frontend environment for optimizing sass and javascript.
+There's no dependencies for Gulp or Webpack.
 
-## 必要モジュール
+## Requirements
 - Node.js
 
-## 利用可能な機能
-- CSS, JSの圧縮
-- CSSのベンダープレフィックスをコンパイル時に自動付与
-- JSのトランスパイル（ES6をES5へ変換してコンパイル）
-- `import()`文によるモジュール分割を利用可能
+## Functions
+- Compresses css and javascript
+- adds vendor prefix to css using Autoprefixer
+- converts ES6+ into ES5
+- enables to use `require()' or `import()` phrase in javascript
 
-## 使い方
-node_modulesをインストールします。
+## How to use
+Install the `node_modules`.
 
 ```bash
 $ npm install
@@ -19,36 +20,35 @@ $ npm install
 
 ---
 
-`.env`を設定します
+Configure `.env`.
+Add settings to the end if `.env` already exists.
 
-.envがすでにある場合は、追記してください。
-
-### .env の設定例
+### Example of .env
 ```.env
 # NPM settings
-# 圧縮する場合：production, しない場合：development
+# if compress: production, if dont compress: development
 NODE_ENV=production
 
-# Sassファイルのディレクトリ
+# the directory in which sass is
 STYLE_PATH=resources/sass/
 
-# JSファイルのディレクトリ
+# the directory in which javascript is
 JS_PATH=resources/js/
 
-# 圧縮後ファイルのディレクトリ
+# the directory in which the file compressed
 STYLE_DIST_PATH=public/css/
 JS_DIST_PATH=public/js/
 ```
 
 ---
 
-コンパイル時、下記を実行してください。変更が自動で監視されます。
+Execute the below when compiling.
 
 ```bash
 $ npm run watch
 ```
 
-より動作速度を早くするため、Sassのみ・JSのみの監視も利用してください。
+You can use sass only / javascript only compiling to use faster.
 
 ```bash
 $ npm run watch:sass
@@ -56,7 +56,7 @@ $ npm run watch:sass
 $ npm run watch:js
 ```
 
-監視ではなく、一度だけコンパイルすることもできます。
+You can also build once.
 
 ```bash
 $ npm run build

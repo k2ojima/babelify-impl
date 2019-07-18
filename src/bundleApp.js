@@ -55,6 +55,6 @@ recursive(resolved_dir+path.sep, [(file, stat) => !(stat.isDirectory() || path.e
             if (err) throw err;
         })
         .pipe(fs.createWriteStream(resolved_dist + path.sep + relative_value))
-        .on('close', () => { console.info('[babelify] compiled '+resolved_dist+path.sep +relative_value); });
+        .on('close', () => { console.info('[browserify-es6-sass-env] compiled '+resolved_dist+path.sep +relative_value); });
     });
 });

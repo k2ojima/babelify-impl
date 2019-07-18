@@ -9,7 +9,7 @@ There's no dependencies for Gulp or Webpack.
 - Compresses css and javascript
 - adds vendor prefix to css using Autoprefixer
 - converts ES6+ into ES5
-- enables to use `require()' or `import()` phrase in javascript
+- enables to use `require()` or `import()` phrase in javascript
 
 ## How to use
 Install the `node_modules`.

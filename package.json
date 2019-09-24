@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/xentok/babelify-impl.git"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "scripts": {
     "postinstall": "bash scripts/postinstall.sh",
     "build:sass": "env-cmd -f .env bash scripts/build_style.sh",

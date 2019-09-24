@@ -2,7 +2,7 @@
   "name": "babelify-impl",
   "description": "a light frontend environment which uses babelify and Sass.",
   "authors": "kento",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/xentok/babelify-impl.git"
@@ -10,7 +10,6 @@
   "license": "MIT",
   "bin": "./bin/cli.js",
   "scripts": {
-    "postinstall": "bash ./bin/postinstall.sh"
   },
   "alias": {},
   "devDependencies": {

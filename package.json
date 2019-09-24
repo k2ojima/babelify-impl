@@ -1,22 +1,23 @@
 {
-  "name": "browserify-es6-sass-env",
-  "description": "A light frontend development tool that uses no task runners.",
-  "authors": "stoiel",
-  "version": "1.0.0",
+  "name": "babelify-impl",
+  "description": "a light frontend environment which uses babelify and Sass.",
+  "authors": "kento",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoiel/browserify-es6-sass-env.git"
+    "url": "https://github.com/xentok/babelify-impl.git"
   },
   "license": "GPL-3.0",
   "scripts": {
     "postinstall": "bash scripts/postinstall.sh",
     "build:sass": "env-cmd -f .env bash scripts/build_style.sh",
-    "build:js": "env-cmd -f .env node src/bundleApp.js",
+    "build:js": "env-cmd -f .env node src/bundle.js",
     "build": "parallelshell \"npm run build:sass\" \"npm run build:js\"",
     "watch:sass": "env-cmd -f .env bash scripts/watch_style.sh",
     "watch:js": "env-cmd -f .env bash scripts/watch_js.sh",
     "watch": "env-cmd -f .env bash scripts/watch.sh"
   },
+  "private": true,
   "alias": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",

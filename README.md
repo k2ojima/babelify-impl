@@ -1,6 +1,5 @@
-# browserify-es6-sass-env
-This is the frontend environment for optimizing sass and javascript.
-There's no dependencies for Gulp or Webpack.
+# babelify-impl
+This is a frontend environment which uses babelify and Sass.
 
 ## Requirements
 - Node.js
@@ -20,8 +19,8 @@ $ npm install
 
 ---
 
-Configure `.env`.
-Add settings to the end if `.env` already exists.
+Create `.env`.
+Add following setting if `.env` already exists.
 
 ### Example of .env
 ```.env
@@ -48,7 +47,7 @@ Execute the below when compiling.
 $ npm run watch
 ```
 
-You can use sass only / javascript only compiling to use faster.
+You can compile only sass/javascript to make faster.
 
 ```bash
 $ npm run watch:sass

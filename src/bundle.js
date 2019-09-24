@@ -1,4 +1,5 @@
 
+const pkg = require('../package.json');
 const fs = require('fs'),
     recursive = require('recursive-readdir'),
     browserify = require('browserify'),
@@ -14,6 +15,8 @@ const root_alias = '~',
 const resolved_dir = path.resolve(__dirname, '..', dir),
     resolved_dist = path.resolve(__dirname, '..', dist);
 
+const color_cyan = '\u001b[36m',
+    color_reset = '\u001b[0m';
 
 recursive(resolved_dir+path.sep, [(file, stat) => !(stat.isDirectory() || path.extname(file) == ext)],
 (err, files) => {
@@ -32,13 +35,7 @@ recursive(resolved_dir+path.sep, [(file, stat) => !(stat.isDirectory() || path.e
         })
         .transform(babelify.configure({
             presets: [
-                ['@babel/preset-env', {
-                    "targets": {
-                        "ie": 11,
-                        "android": 4,
-                        "safari": 9
-                    }
-                }],
+                ['@babel/preset-env'],
                 process.env.NODE_ENV === 'production' ? ['minify'] :null
             ],
             plugins: [
@@ -55,6 +52,8 @@ recursive(resolved_dir+path.sep, [(file, stat) => !(stat.isDirectory() || path.e
             if (err) throw err;
         })
         .pipe(fs.createWriteStream(resolved_dist + path.sep + relative_value))
-        .on('close', () => { console.info('[browserify-es6-sass-env] compiled '+resolved_dist+path.sep +relative_value); });
+        .on('close', () => { console.info(
+            [color_cyan, '[', pkg.name, '] compiled ', color_reset, resolved_dist, path.sep , relative_value].join('')
+        ); });
     });
 });

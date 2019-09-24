@@ -2,22 +2,16 @@
   "name": "babelify-impl",
   "description": "a light frontend environment which uses babelify and Sass.",
   "authors": "kento",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/xentok/babelify-impl.git"
   },
   "license": "MIT",
+  "bin": "./bin/cli.js",
   "scripts": {
-    "postinstall": "bash scripts/postinstall.sh",
-    "build:sass": "env-cmd -f .env bash scripts/build_style.sh",
-    "build:js": "env-cmd -f .env node src/bundle.js",
-    "build": "parallelshell \"npm run build:sass\" \"npm run build:js\"",
-    "watch:sass": "env-cmd -f .env bash scripts/watch_style.sh",
-    "watch:js": "env-cmd -f .env bash scripts/watch_js.sh",
-    "watch": "env-cmd -f .env bash scripts/watch.sh"
+    "postinstall": "bash ./bin/postinstall.sh"
   },
-  "private": true,
   "alias": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",

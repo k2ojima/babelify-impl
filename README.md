@@ -1,26 +1,28 @@
 # babelify-impl
 This is a frontend environment which uses babelify and Sass.
 
+Available even if you have recursive folder structure.
+
 ## Requirements
+- bash or zsh
 - Node.js
 
 ## Functions
-- Compresses css and javascript
+- compiles sass and javascript
 - adds vendor prefix to css using Autoprefixer
-- converts ES6+ into ES5
-- enables to use `require()` or `import()` phrase in javascript
+- converts ES6+ into ES5 using babelify
+- enables to use `require()` or `import()` phrase in javascript using browserify
 
 ## How to use
-Install the `node_modules`.
+Install this package.
 
 ```bash
-$ npm install
+$ npm i -D babelify-impl
 ```
 
 ---
 
-Create `.env`.
-Add following setting if `.env` already exists.
+Add following setting to the `.env`.
 
 ### Example of .env
 ```.env
@@ -41,22 +43,22 @@ JS_DIST_PATH=public/js/
 
 ---
 
-Execute the below when compiling.
+Executing below, watch and compile sass and js.
 
 ```bash
-$ npm run watch
+$ npx babelify-impl watch
 ```
 
 You can compile only sass/javascript to make faster.
 
 ```bash
-$ npm run watch:sass
+$ npx babelify-impl watch sass
 
-$ npm run watch:js
+$ npx babelify-impl watch js
 ```
 
 You can also build once.
 
 ```bash
-$ npm run build
+$ npx babelify-impl build
 ```

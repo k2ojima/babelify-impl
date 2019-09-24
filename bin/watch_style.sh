@@ -1,4 +1,5 @@
 #!/bin/bash
+echo 'watching sass...'
 [[ $NODE_ENV -eq production ]] && output_style='compressed' || output_style='expanded'
 
 node-sass -r -w $STYLE_PATH\

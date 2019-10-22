@@ -1,39 +1,33 @@
 {
   "name": "babelify-impl",
-  "description": "a light frontend environment which uses babelify and Sass.",
+  "description": "a light frontend environment through babelify",
   "authors": "kento",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/xentok/babelify-impl.git"
   },
   "license": "MIT",
-  "bin": "./bin/cli.js",
-  "scripts": {
-  },
+  "bin": "./lib/cli.js",
+  "scripts": {},
   "alias": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "autoprefixer": "^9.5.1",
     "babel-jest": "^24.8.0",
     "babel-plugin-module-resolver": "^3.2.0",
     "babel-preset-minify": "^0.5.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "browserslist": "^4.6.1",
-    "core-js": "^3.1.3",
+    "core-js": "^3.3.3",
+    "dotenv": "^8.1.0",
     "env-cmd": "^9.0.1",
-    "glob": "^7.1.4",
+    "glob": "^7.1.5",
     "jest": "^24.8.0",
-    "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
-    "nodemon": "^1.19.1",
-    "npm-watch": "^0.6.0",
-    "parallelshell": "3.0.2",
     "path": "^0.12.7",
-    "postcss-cli": "^6.1.2",
-    "recursive-readdir": "^2.2.2"
+    "recursive-readdir": "^2.2.2",
+    "watch": "^1.0.2"
   }
 }

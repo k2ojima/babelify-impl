@@ -1,33 +1,33 @@
 {
-  "name": "babelify-impl",
-  "description": "a light frontend environment through babelify",
-  "authors": "kento",
-  "version": "2.3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xentok/babelify-impl.git"
-  },
-  "license": "MIT",
-  "bin": "./lib/cli.js",
-  "scripts": {},
-  "alias": {},
-  "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "babel-jest": "^24.8.0",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "babel-preset-minify": "^0.5.0",
-    "babelify": "^10.0.0",
-    "browserify": "^16.2.3",
-    "browserslist": "^4.6.1",
-    "core-js": "^3.3.3",
-    "dotenv": "^8.1.0",
-    "env-cmd": "^9.0.1",
-    "glob": "^7.1.5",
-    "jest": "^24.8.0",
-    "path": "^0.12.7",
-    "recursive-readdir": "^2.2.2",
-    "watch": "^1.0.2"
-  }
+    "name": "babelify-impl",
+    "description": "a light frontend environment through babelify",
+    "authors": "kento",
+    "version": "2.3.0",
+    "repository": {
+            "type": "git",
+            "url": "https://github.com/xentok/babelify-impl.git"
+    },
+    "license": "MIT",
+    "bin": "./lib/cli.js",
+    "scripts": {},
+    "alias": {},
+    "dependencies": {
+        "@babel/cli": "^7.4.4",
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "babel-jest": "^24.8.0",
+        "babel-plugin-module-resolver": "^3.2.0",
+        "babel-preset-minify": "^0.5.0",
+        "babelify": "^10.0.0",
+        "browserify": "^16.2.3",
+        "browserslist": "^4.6.1",
+        "core-js": "^3.3.3",
+        "dotenv": "^8.1.0",
+        "env-cmd": "^9.0.1",
+        "glob": "^7.1.5",
+        "jest": "^24.8.0",
+        "path": "^0.12.7",
+        "recursive-readdir": "^2.2.2",
+        "watch": "^1.0.2"
+    }
 }

@@ -1,5 +1,5 @@
 # babelify-impl
-This is a implementation of babelify.
+This is an implementation of babelify.
 Available even if you have recursive folder structure.
 
 ## Requirements

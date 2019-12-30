@@ -7,6 +7,6 @@ export class ProductSubscriber {
     }
 
     subscribe() {
-        console.log('the '+name+' price is '+price);
+        console.log('the '+this.name+' price is '+this.price);
     }
 }

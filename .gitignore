@@ -17,6 +17,7 @@ dist/
 # IDE settings
 .vscode/
 .idea
+.metals
 
 # os system files
 *~

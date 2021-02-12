@@ -1,7 +1,7 @@
 {
     "name": "babelify-impl",
     "description": "a light frontend environment through babelify",
-    "authors": "kento",
+    "authors": "xentok",
     "version": "2.4.0",
     "repository": {
         "type": "git",
@@ -9,7 +9,9 @@
     },
     "license": "MIT",
     "bin": "./lib/cli.js",
-    "scripts": {},
+    "scripts": {
+        "postinstall": "husky install"
+    },
     "alias": {},
     "dependencies": {
         "@babel/cli": "^7.4.4",
@@ -29,6 +31,9 @@
         "watch": "^1.0.2"
     },
     "devDependencies": {
+        "@commitlint/cli": "^11.0.0",
+        "@commitlint/config-conventional": "^11.0.0",
+        "husky": "^5.0.9",
         "jest": "^24.8.0"
     }
 }
